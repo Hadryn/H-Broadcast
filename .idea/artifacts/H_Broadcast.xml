@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="H-Broadcast">
+    <output-path>$USER_HOME$/Desktop/Plugins</output-path>
+    <root id="archive" name="H-Broadcast.jar">
+      <element id="module-output" name="H-Broadcast" />
+    </root>
+  </artifact>
+</component>

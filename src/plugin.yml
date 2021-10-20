@@ -1,0 +1,6 @@
+name: H-Broadcast
+main: com.h_dev.hbroadcast.Main
+version: 1.0
+commands:
+  broadcast:
+    aliases: [b]
