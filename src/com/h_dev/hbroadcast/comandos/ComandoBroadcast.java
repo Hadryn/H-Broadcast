@@ -13,7 +13,6 @@ public class ComandoBroadcast implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
-        if(sender instanceof Player){
             Player p = (Player) sender;
             String broadcastTag =(Main.config.getString("server_nametag").replace("&","§"));
 
@@ -26,13 +25,8 @@ public class ComandoBroadcast implements CommandExecutor {
                 Bukkit.broadcastMessage(broadcastTag +" "+ broadcastMsg.replace("&","§"));
 
             }else{
-                p.sendMessage(ChatColor.RED+"Você não tem permissão para executar este comando!");
+                p.sendMessage("§cCOMANDO NEGADO PELO ADMINISTRADOR!");
             }
-        }else{
-
-        }
-
-
         return false;
     }
 }
