@@ -2,7 +2,6 @@ package com.h_dev.hbroadcast.comandos;
 
 import com.h_dev.hbroadcast.Main;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -14,15 +13,15 @@ public class ComandoBroadcast implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
             Player p = (Player) sender;
-            String broadcastTag =(Main.config.getString("server_nametag").replace("&","§"));
+            String broadcastTag = Main.config.getString("server_nametag").replace("&", "§");
 
             if(p.hasPermission("h_dev.hbroadcast.use")){
 
-                String broadcastMsg = "";
+                String broadcastMsg = "".replace("&","§");
                 for (String a : args){
                     broadcastMsg += a+" ";
                 }
-                Bukkit.broadcastMessage(broadcastTag +" "+ broadcastMsg.replace("&","§"));
+                Bukkit.broadcastMessage(broadcastTag +" "+ broadcastMsg);
 
             }else{
                 p.sendMessage("§cCOMANDO NEGADO PELO ADMINISTRADOR!");

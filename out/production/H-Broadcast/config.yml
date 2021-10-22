@@ -1,2 +1,25 @@
 # Customização do bradcast
+
+#server_nametag - é o nome do seu servidor.
 server_nametag: '&f&l<&a&lNome &c&ldo &6&lServidor &f&l> '
+
+#enable-firstmessage - 'true' habilita a mensagem e 'false' desabilita a mensagem.
+#firstmessage - define a mensagem que você deseja adicionar.
+#timer-firstmessage - define o delay em segundos que você quer que a mensagem aguarde para aparecer novamente.
+
+enable-firstmessage: 'true'
+firstmessage: '&aPrimeira Mensagem automatica!'
+timer-firstmessage: 10000
+
+enable-secondmessage: 'false'
+secondmessage: '$aSegunda Mensagem automatica!'
+timer-secondmessage: 10
+
+enable-thirdmessage: 'false'
+thirdmessage: '&aTerceira Mensagem automatica'
+timer-thirdmessage: 15
+
+enable-fourthmessage: 'false'
+fourthmessage: '&aQuarta Mensagem automatica'
+timer-fourthmessage: 20
+
